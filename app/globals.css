@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --green-900: #0e3626;
+  --green-800: #12442f;
+  --green-700: #166039;
+  --green-600: #1a7a4a;
+  --green-500: #238c57;
+  --green-tint: #e7f1ea;
+  --pink-600: #d81b60;
+  --pink-500: #e23e77;
+  --pink-tint: #fbe7ee;
+  --pink-tint-2: #f9dce8;
+  --cream: #fbf8f2;
+  --cream-2: #f4eee3;
+  --white: #ffffff;
+  --ink: #17241d;
+  --ink-soft: #4c5a52;
+  --ink-faint: #7c887f;
+  --line: #e5e0d3;
+  --line-on-dark: rgba(255, 255, 255, 0.14);
+  --navy: #0c1712;
+  --background: var(--cream);
+  --foreground: var(--ink);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-green-900: var(--green-900);
+  --color-green-800: var(--green-800);
+  --color-green-700: var(--green-700);
+  --color-green-600: var(--green-600);
+  --color-green-500: var(--green-500);
+  --color-green-tint: var(--green-tint);
+  --color-pink-600: var(--pink-600);
+  --color-pink-500: var(--pink-500);
+  --color-pink-tint: var(--pink-tint);
+  --color-pink-tint-2: var(--pink-tint-2);
+  --color-cream: var(--cream);
+  --color-cream-2: var(--cream-2);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-line: var(--line);
+  --color-line-on-dark: var(--line-on-dark);
+  --color-navy: var(--navy);
+  --font-sans: var(--font-montserrat);
+  --shadow-sm: 0 1px 2px rgba(23, 36, 29, 0.04), 0 2px 8px rgba(23, 36, 29, 0.04);
+  --shadow-md: 0 8px 24px rgba(23, 36, 29, 0.08);
+  --shadow-lg: 0 20px 48px rgba(14, 54, 38, 0.16);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-montserrat), Montserrat, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: -0.015em;
+  line-height: 1.12;
 }
