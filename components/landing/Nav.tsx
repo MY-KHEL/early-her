@@ -26,7 +26,7 @@ export function Nav() {
           ))}
         </div>
         <div className="flex items-center gap-3">
-          <ButtonLink href="/#try" size="sm" className="hidden min-[481px]:inline-flex">
+          <ButtonLink href="https://earlyher-frontend.vercel.app/" size="sm" className="hidden min-[481px]:inline-flex">
             Try EarlyHer
           </ButtonLink>
           <button
@@ -63,7 +63,7 @@ export function Nav() {
               </Link>
             ))}
             <ButtonLink
-              href="/#try"
+              href="https://earlyher-frontend.vercel.app/"
               size="sm"
               className="mt-2 self-start min-[481px]:hidden"
               onClick={() => setOpen(false)}
