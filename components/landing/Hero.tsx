@@ -21,7 +21,7 @@ export function Hero() {
             care sooner.
           </p>
           <div className="mb-[26px] flex flex-wrap items-center gap-4">
-            <ButtonLink href="/#try">Try EarlyHer →</ButtonLink>
+            <ButtonLink href="https://earlyher-frontend.vercel.app">Try EarlyHer →</ButtonLink>
             <Link
               href="/#how-it-works"
               className="inline-flex items-center gap-1.5 border-b border-ink pb-0.5 text-[14.5px] font-semibold text-ink"
