@@ -13,7 +13,7 @@ export function FinalCta() {
           navigation simpler, clearer and more accessible.
         </p>
         <div className="mb-[26px] flex flex-wrap items-center justify-center gap-4">
-          <ButtonLink href="https://earlyher-frontend.vercel.app">Try EarlyHer →</ButtonLink>
+          <ButtonLink href="https://app.early-her.com">Try EarlyHer →</ButtonLink>
           <ButtonLink href="/#research-form" variant="ghost" onDark>
             Help us build it →
           </ButtonLink>
